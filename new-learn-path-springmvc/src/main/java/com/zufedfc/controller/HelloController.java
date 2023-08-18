@@ -19,4 +19,10 @@ public class HelloController {
         return "test";
     }
 
+    @RequestMapping ("/target")
+    public String target(){
+        //返回视图名称
+        return "target";
+    }
+
 }
