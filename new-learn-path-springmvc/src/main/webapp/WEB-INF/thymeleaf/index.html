@@ -8,5 +8,23 @@
 <h2>test 333</h2>
 <a th:href="@{/target}">访问目标页面target.html</a>
 <a th:href="@{/product/list}">访问产品列表页面</a>
+<a th:href="@{/product/add}">访问add页面</a>
+<a th:href="@{/product/addone}">访问addone页面</a>
+<a th:href="@{/product/update}">访问update页面-->GET</a>
+
+<hr>
+<a th:href="@{/product/create}">测试getMapping</a>
+
+<form th:action="@{/product/update}" method="post">
+    <input type="text" name="name" value="name"/>
+    <input type="text" name="price" value="price"/>
+    <input type="submit" value="提交-->POST"/>
+</form>
+
+<form th:action="@{/product/update}" method="post">
+    <input type="text" name="name" value="name"/>
+    <input type="text" name="price" value="price"/>
+    <input type="submit" value="提交-->PUT"/>
+</form>
 </body>
 </html>
