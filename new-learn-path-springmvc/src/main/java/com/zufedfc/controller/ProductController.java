@@ -31,10 +31,14 @@ public class ProductController {
         return "product/update";
     }
 
-    @GetMapping("/create")
+    @GetMapping(value = "/create",
+        params = {"type"}
+    )
     public String create(){
         return "product/create";
     }
+
+
 
 
 

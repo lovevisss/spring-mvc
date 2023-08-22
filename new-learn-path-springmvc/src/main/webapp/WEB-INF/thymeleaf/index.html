@@ -13,7 +13,7 @@
 <a th:href="@{/product/update}">访问update页面-->GET</a>
 
 <hr>
-<a th:href="@{/product/create}">测试getMapping</a>
+<a th:href="@{/product/create(type='product')}">测试getMapping</a>
 
 <form th:action="@{/product/update}" method="post">
     <input type="text" name="name" value="name"/>
