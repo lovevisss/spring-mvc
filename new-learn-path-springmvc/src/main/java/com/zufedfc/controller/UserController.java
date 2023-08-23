@@ -1,10 +1,8 @@
 package com.zufedfc.controller;
 
+import com.zufedfc.model.User;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestHeader;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
@@ -46,6 +44,19 @@ public class UserController {
         System.out.println("testForward"+"name = " + name + ",id = " + id + ",hobby = " + Arrays.toString(hobby) + ",userAgent = " + userAgent );
         return "user/index";
     }
+
+//    user.create
+    @RequestMapping("/create")
+    public String create(){
+        return "user/create";
+    }
+
+    @PostMapping("/testPOJO")
+    public String testPOJO(User user){
+        System.out.println("testPOJO"+"user = " + user.toString());
+        return "user/index";
+    }
+
 
 
 
