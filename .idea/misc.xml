@@ -3,6 +3,7 @@
   <component name="ExternalStorageConfigurationManager" enabled="true" />
   <component name="FrameworkDetectionExcludesConfiguration">
     <file type="web" url="file://$PROJECT_DIR$/new-learn-path-springmvc" />
+    <file type="web" url="file://$PROJECT_DIR$/pagescope" />
   </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
