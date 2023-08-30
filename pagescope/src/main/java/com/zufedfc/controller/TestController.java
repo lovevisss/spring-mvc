@@ -17,4 +17,16 @@ public class TestController {
         return "test";
     }
 
+    @RequestMapping("/test2")
+    public String test2(){
+        return "forward:/test";
+    }
+
+
+
+    
+
+
+
+
 }

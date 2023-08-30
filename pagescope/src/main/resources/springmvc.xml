@@ -6,6 +6,8 @@
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
         http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
 
+
+    <mvc:view-controller path="/test_rest" view-name="test_rest" />
     <!-- 配置注解驱动 -->
     <mvc:annotation-driven />
 
