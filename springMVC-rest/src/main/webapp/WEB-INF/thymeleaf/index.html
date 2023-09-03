@@ -15,9 +15,24 @@
     name:
     <input type="text" name="name" value="name"><br>
     password:
-    <input type="password" >
+    <input type="password" name="password">
     <input type="submit" value="提交">
 </form>
+
+<form th:action="@{/testRequestEntity}" method="post">
+
+    name:
+    <input type="text" name="name" value="name"><br>
+    password:
+    <input type="password" name="password">
+    <input type="submit" value="测试RequestEntity">
+</form>
+
+<a th:href="@{/testResponseEntity}">testResponseEntity</a>
+
+<a th:href="@{/testResponseEntity2}">testResponseEntity2</a>
+
+<a th:href="@{/testResponseEntity3}">testResponseEntity3</a>
 
 
 
