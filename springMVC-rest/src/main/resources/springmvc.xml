@@ -10,6 +10,7 @@
 
     <mvc:view-controller path="/" view-name="index"></mvc:view-controller>
     <mvc:view-controller path="/toAdd" view-name="add"></mvc:view-controller>
+    <mvc:view-controller path="/file" view-name="file"></mvc:view-controller>
 
 <!--    配置注解驱动-->
     <mvc:annotation-driven/>

@@ -46,4 +46,13 @@ public class HttpController {
         return new User(1, "zufedfc", "dfc@qq.com", 18);
     }
 
+//    test ajax
+    @RequestMapping(value = "testAjax")
+    @ResponseBody
+    public String testAjax(String username, String password) {
+        System.out.println("username: " + username);
+        System.out.println("password: " + password);
+        return "successful";
+    }
+
 }

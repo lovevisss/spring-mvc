@@ -33,8 +33,41 @@
 <a th:href="@{/testResponseEntity2}">testResponseEntity2</a>
 
 <a th:href="@{/testResponseEntity3}">testResponseEntity3</a>
+<div id="app">
+
+    <a th:href="@{/testAjax}"  @click="tesAxios">test Ajax</a>
+</div>
 
 
 
 </body>
+
+<script th:src="@{/static/js/vue.js}" type="text/javascript"></script>
+<script th:src="@{/static/js/axios.min.js}" type="text/javascript"></script>
+
+<script type="text/javascript">
+    var app = new Vue({
+        el: '#app',
+        // bind delete to form delete
+        methods: {
+            tesAxios: function (event) {
+                event.preventDefault();
+                var a = document.getElementsByTagName("a");
+                a.action = event.target.href;
+            //     post axios
+                axios.post(a.action, {
+                    username: 'Fred',
+                    password: 'Flintstone'
+                })
+                    .then(function (response) {
+                        alert(response.data);
+                        console.log(response);
+                    })
+                    .catch(function (error) {
+                        console.log(error);
+                    });
+            },
+        }
+    })
+</script>
 </html>

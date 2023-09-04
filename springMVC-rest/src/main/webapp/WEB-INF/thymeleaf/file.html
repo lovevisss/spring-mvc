@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<!--download file-->
+<a th:href="@{/download}">download</a>
+
+<!--upload file-->
+<form th:action="@{/upload}" method="post" enctype="multipart/form-data">
+
+    <input type="file" name="file"><br>
+
+    <!--submit-->
+    <input type="submit" value="upload">
+</body>
+</html>
