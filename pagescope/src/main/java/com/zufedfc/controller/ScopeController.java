@@ -21,6 +21,7 @@ public class ScopeController {
         return "test";
     }
 
+
     @RequestMapping("/testRequestByModelAndView")
     public ModelAndView ModelAndView(){
 //        使用ModelAndView 向request域中存值
