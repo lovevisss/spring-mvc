@@ -61,4 +61,11 @@ public class HttpController {
         return "success";
     }
 
+
+    @RequestMapping("testInterceptor")
+    public String testInterceptor() {
+        System.out.println("testInterceptor");
+        return "success";
+    }
+
 }
