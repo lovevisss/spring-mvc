@@ -17,6 +17,16 @@
 
 <!--    配置静态资源的处理-->
     <mvc:default-servlet-handler/>
+<!--    配置异常处理-->
+<!--    <bean id="simpleMappingExceptionResolver" class="org.springframework.web.servlet.handler.SimpleMappingExceptionResolver">-->
+<!--        <property name="exceptionMappings">-->
+<!--            <props>-->
+<!--                <prop key="java.lang.ArithmeticException">error</prop>-->
+<!--                <prop key="java.lang.NullPointerException">error</prop>-->
+<!--            </props>-->
+<!--        </property>-->
+<!--        <property name="exceptionAttribute" value="ex"></property>-->
+<!--    </bean>-->
 
 <!--    配置文件上传解析器-->
     <bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">

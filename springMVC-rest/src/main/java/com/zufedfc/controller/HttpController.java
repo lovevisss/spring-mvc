@@ -54,5 +54,11 @@ public class HttpController {
         System.out.println("password: " + password);
         return "successful";
     }
+//    test exception
+    @RequestMapping(value = "testException")
+    public String testException() {
+        int i = 10 / 0;
+        return "success";
+    }
 
 }
