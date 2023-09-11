@@ -12,6 +12,7 @@
         <module>new-learn-path-springmvc</module>
         <module>pagescope</module>
         <module>springMVC-rest</module>
+        <module>abstractinit</module>
     </modules>
 
     <properties>
